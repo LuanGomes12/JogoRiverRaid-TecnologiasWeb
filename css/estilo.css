@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'Oswald';
+  src: url('fontes/Oswald-Regular.ttf') format('truetype');
+  font-family: 'Pixel';
+  src: url("fontes/Pixel.ttf");
+}
+
+* {
+  font-family: 'Oswald', sans-serif;
+  box-sizing: border-box;
+}
+
+html{
+  height: 100%;
+}
+
+body{
+  color: rgb(173, 239, 255);
+  background-color: #333333;
+  text-align: center;
+}
+
+h1{
+  margin-right: 200px;
+}
+
+#tela{
+  background-color: #2255AA;
+  border: 1px solid #FFFFFF;
+}
+
+button{
+  background-color: #eff7fc;
+  color: rgb(5, 5, 5);
+  border: 1px solid rgb(151, 239, 255);
+  width: 100px;
+  height: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+button:hover{
+  background-color: rgb(151, 239, 255);
+}
+
+button:disabled{
+  background-color: #dddddd;
+  cursor: not-allowed;
+}

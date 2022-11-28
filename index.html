@@ -4,13 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>River Raid</title>
-    <link rel="stylesheet" href="css/main.css" />
+    <title>River Raid - Versão ALFA</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+
+    <!-- <script src="js/mapa01.js"></script>
+    <script src="js/Jogador.js"></script>
+    <script src="js/Cenario.js"></script> -->
   </head>
-  <body class="conteudo-body">
+  <body>
     <h1>River Raid</h1>
-    <div class="display">
-      <img class="nave" src="img/nave3.png" alt="nave" />
-    </div>
+    <canvas id="tela" width="400" height="550">Navegador não suportado!</canvas>
+    <button onclick="RiverRaid.novoJogo('tela')" id="btnNovo">Novo jogo</button>
+    <button onclick="RiverRaid.pausar()" id="btnPausa">Pausar</button>
+    <!-- <p id="tecla"></p> -->
+    <p>Mover: A (esquerda) e D (direita)</p>
+    <script src="js/mapa01.js"></script>
+    <script src="js/mapa02.js"></script>
+    <script src="js/mapa03.js"></script>
+    <script src="js/mapa04.js"></script>
+    <script src="js/mapa05.js"></script>
+    <script src="js/Jogador.js"></script>
+    <script src="js/Cenario.js"></script>
+    <script src="js/RiverRaid.js"></script>
   </body>
 </html>
