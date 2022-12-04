@@ -1,5 +1,12 @@
+@font-face {
+  font-family: 'Oswald';
+  src: url('fonts/Oswald-Regular.ttf') format('truetype');
+  font-family: 'Pixel';
+  src: url("fontes/Pixel.ttf");
+}
+
  *{
-  font-family: 'Pixel', sans-serif;
+  font-family: 'Oswald', sans-serif;
   box-sizing: border-box;
 }
 
@@ -59,6 +66,7 @@ button:disabled{
 }
 
 #menu{
+  font-family: Pixel;
   display: grid;
   grid-template-rows: 40px 40px 300px;
   color: var(--menu);
