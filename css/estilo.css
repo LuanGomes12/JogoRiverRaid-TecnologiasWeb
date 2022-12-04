@@ -55,11 +55,10 @@ button:disabled{
 
 #config{
   display: flex;
-  flex-direction: row;
   justify-content: center;
 }
 
-#desc{
+#menu{
   display: grid;
   grid-template-rows: 40px 40px 300px;
   color: var(--menu);

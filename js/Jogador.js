@@ -33,8 +33,6 @@ function Jogador(arqImagem, posicaoX, posicaoY, riverRaid) {
       this.x -= 4
     } else if (this.direita) {
       this.x += 4
-    } else {
-      this.velocidade = 0.08
     }
     this.riverRaid.cenario.andar(this.velocidade)
   }

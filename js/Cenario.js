@@ -95,13 +95,6 @@ function Cenario(riverRaid) {
     )
   }
 
-  this.pixelParaMatrizX = function (px) {
-    return Math.floor(px / Cenario.largura)
-  }
-  this.pixelParaMatrizY = function (py) {
-    return this.linhasPorTela - 1 - Math.floor(py / Cenario.largura)
-  }
-
   this.getPosicaoMapa = function (x, y) {
     var mapa = Math.floor((this.posicao + y) / this.totalLinhasMatriz)
     var sobra = Math.floor(this.posicao + y) % this.totalLinhasMatriz
@@ -205,5 +198,12 @@ function Cenario(riverRaid) {
         }
       }
     }
+  }
+
+  this.pixelParaMatrizX = function (px) {
+    return Math.floor(px / Cenario.largura)
+  }
+  this.pixelParaMatrizY = function (py) {
+    return this.linhasPorTela - 1 - Math.floor(py / Cenario.largura)
   }
 }
