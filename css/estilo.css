@@ -1,12 +1,5 @@
-@font-face {
-  font-family: 'Oswald';
-  src: url('fontes/Oswald-Regular.ttf') format('truetype');
-  font-family: 'Pixel';
-  src: url("fontes/Pixel.ttf");
-}
-
-* {
-  font-family: 'Oswald', sans-serif;
+ *{
+  font-family: 'Pixel', sans-serif;
   box-sizing: border-box;
 }
 
@@ -15,17 +8,22 @@ html{
 }
 
 body{
-  color: rgb(173, 239, 255);
-  background-color: #333333;
   text-align: center;
+  --titulo: rgb(173, 239, 255) ;
+  --menu:rgb(238, 238, 238);
+  --submenu:  #33bea0;
+  --bg-tela:#2255AA;
+  --bg-body: #333333;
+  --bg-desc: rgb(56, 56, 56);
+  background-color: var(--bg-body);
 }
 
 h1{
-  margin-right: 200px;
+  color: var(--titulo);
 }
 
 #tela{
-  background-color: #2255AA;
+  background-color: var(--bg-tela);
   border: 1px solid #FFFFFF;
 }
 
@@ -47,4 +45,23 @@ button:hover{
 button:disabled{
   background-color: #dddddd;
   cursor: not-allowed;
+}
+
+#pontuacao, #energia, #qtdEnergia
+{
+  font-size: 20px;
+  color: var(--submenu);
+}
+
+#config{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#desc{
+  display: grid;
+  grid-template-rows: 40px 40px 300px;
+  color: var(--menu);
+  background-color: var(--bg-desc);
 }

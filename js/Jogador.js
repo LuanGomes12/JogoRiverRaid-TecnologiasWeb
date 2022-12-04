@@ -1,13 +1,13 @@
-function Jogador(nomeArq, inicioX, posicaoY, riverRaid) {
+function Jogador(arqImagem, posicaoX, posicaoY, riverRaid) {
   'use strict'
   this.imagem = new Image()
-  this.imagem.src = nomeArq
+  this.imagem.src = arqImagem
   this.imagem.onload = RiverRaid.desenharTudo
-  this.x = inicioX
+  this.x = posicaoX
   this.y = posicaoY
   this.esquerda = false
   this.direita = false
-  this.velocidade = 0.15
+  this.velocidade = 0.08
   this.riverRaid = riverRaid
 
   this.desenhar = function (ctx) {
@@ -34,9 +34,9 @@ function Jogador(nomeArq, inicioX, posicaoY, riverRaid) {
     } else if (this.direita) {
       this.x += 4
     } else {
-      this.velocidade = 0.15
+      this.velocidade = 0.08
     }
     this.riverRaid.cenario.andar(this.velocidade)
   }
 }
-Jogador.largura = 35
+Jogador.largura = 23
